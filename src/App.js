@@ -1,6 +1,27 @@
 import "./App.css"
 import React, { useState } from 'react';
 import "./App.css"
+
+// Node.js roadmap component
+function NodeRoadmap() {
+  return (
+    <div>
+      <h2>Node.js Roadmap</h2>
+      {/* Add your roadmap content here */}
+    </div>
+  );
+}
+
+// React roadmap component
+function ReactRoadmap() {
+  return (
+    <div>
+      <h2>React Roadmap</h2>
+      {/* Add your roadmap content here */}
+    </div>
+  );
+}
+
 function App() {
   const [tweetContent, setTweetContent] = useState("");
 
@@ -26,6 +47,7 @@ function App() {
                 <p className="tweet-username">@johndoe</p>
               </div>
             </div>
+            
             <p className="tweet-content">{tweetContent}</p>
             <div className="tweet-actions">
               <button className="like-button">Like</button>
@@ -35,6 +57,11 @@ function App() {
           </div>
         </div>
       </main>
+
+      {/* Include the roadmaps */}
+      <NodeRoadmap />
+      <ReactRoadmap />
+
       <footer>
         <p>Website created with love by GitHub Copilot</p>
         <p>Harvard Tutorial Tags: React, JavaScript, HTML, CSS</p>
@@ -42,7 +69,5 @@ function App() {
     </div>
   );
 }
-
-
 
 export default App;

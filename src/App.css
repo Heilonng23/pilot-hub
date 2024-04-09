@@ -1,122 +1,151 @@
-nav {
-  background-color: #1DA1F2;
-  padding: 10px;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Global styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
 }
 
-ul {
+/* Navigation styles */
+nav {
+  background-color: #e60023;
+  padding: 20px;
+}
+
+nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: space-between;
 }
 
-li {
-  margin: 0 10px;
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
 }
 
-a {
-  color: white;
+nav ul li a {
+  color: #fff;
   text-decoration: none;
-  font-weight: bold;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Add the new CSS here */
-
-.twitter-body {
-  width: 600px;
-  margin: 0 auto;
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
-}
-
-.twitter-feed {
   padding: 10px;
 }
 
-.tweet {
-  border-bottom: 1px solid #E1E8ED;
-  padding: 10px 0;
+/* Landing animation styles */
+.twitter-body {
+  animation: landingAnimation 1s ease-in-out;
 }
 
-.tweet:last-child {
-  border-bottom: none;
+@keyframes landingAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Tweet styles */
+.tweet {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
 .tweet-header {
   display: flex;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 .profile-picture {
-  width: 48px;
-  height: 48px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   margin-right: 10px;
 }
 
 .tweet-info {
-  display: flex;
-  flex-direction: column;
+  flex-grow: 1;
 }
 
 .tweet-author {
-  font-size: 16px;
+  margin: 0;
+  font-size: 18px;
   font-weight: bold;
-  color: #14171A;
 }
 
 .tweet-username {
+  margin: 0;
   font-size: 14px;
-  color: #657786;
+  color: #888;
 }
 
 .tweet-content {
-  font-size: 15px;
-  color: #14171A;
-  margin: 10px 0;
+  margin: 0;
+  font-size: 16px;
 }
 
 .tweet-actions {
-  display: flex;
-  justify-content: space-between;
+  margin-top: 10px;
 }
 
 .like-button,
 .retweet-button,
 .reply-button {
-  background: none;
+  background-color: #e60023;
+  color: #fff;
   border: none;
-  color: #657786;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-right: 10px;
   cursor: pointer;
+  transition: transform 0.2s ease-in-out;
 }
 
 .like-button:hover,
 .retweet-button:hover,
 .reply-button:hover {
-  color: #1DA1F2;
-}
-footer {
-  background-color: #191414;
-  color: white;
-  padding: 20px;
-  text-align: center;
+  transform: scale(1.1);
 }
 
-footer p {
-  margin: 10px 0;
-}
-
-footer p:first-child {
-  font-size: 18px;
+/* Roadmap styles */
+h2 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 24px;
   font-weight: bold;
 }
 
-footer p:last-child {
+/* Footer styles */
+footer {
+  background-color: #e60023;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
   font-size: 14px;
+}
+
+/* Web3 colors */
+.twitter-body {
+  background-color: #f5f5f5;
+}
+
+.tweet {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.like-button,
+.retweet-button,
+.reply-button {
+  background-color: #00b0ff;
+}
+
+footer {
+  background-color: #00b0ff;
 }
