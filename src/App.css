@@ -1,38 +1,122 @@
-.App {
+nav {
+  background-color: #1DA1F2;
+  padding: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  margin: 0 10px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Add the new CSS here */
+
+.twitter-body {
+  width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.twitter-feed {
+  padding: 10px;
+}
+
+.tweet {
+  border-bottom: 1px solid #E1E8ED;
+  padding: 10px 0;
+}
+
+.tweet:last-child {
+  border-bottom: none;
+}
+
+.tweet-header {
+  display: flex;
+  align-items: center;
+}
+
+.profile-picture {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.tweet-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.tweet-author {
+  font-size: 16px;
+  font-weight: bold;
+  color: #14171A;
+}
+
+.tweet-username {
+  font-size: 14px;
+  color: #657786;
+}
+
+.tweet-content {
+  font-size: 15px;
+  color: #14171A;
+  margin: 10px 0;
+}
+
+.tweet-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.like-button,
+.retweet-button,
+.reply-button {
+  background: none;
+  border: none;
+  color: #657786;
+  cursor: pointer;
+}
+
+.like-button:hover,
+.retweet-button:hover,
+.reply-button:hover {
+  color: #1DA1F2;
+}
+footer {
+  background-color: #191414;
+  color: white;
+  padding: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+footer p {
+  margin: 10px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+footer p:first-child {
+  font-size: 18px;
+  font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer p:last-child {
+  font-size: 14px;
 }
